@@ -27,4 +27,4 @@ CREATE TABLE Course(
 | GET   | Фільтрування списку курсів за вказаними параметрами. Фільтрування доступне за полями name, start_date та end_date. Дані передаються як параметри        | /courses/|http://127.0.0.1:5000/courses/|```{"name":"Java","start_date":"2021-03-30","end_date":"2021-09-30"}```
 | POST   | Додавання нового курсу. Дані передаються в форматі json      | /new/course/ |http://127.0.0.1:5000/new/course/ |```{"name": "C++ Course Advanced","start_date": "2021-06-30","end_date": "2021-09-30","lectures_number": 30} ```|
 | DELETE   | Видалення курсу за id        | /delete/course/<int:course_id>     |http://127.0.0.1:5000/delete/course/3|
-| UPDATE   | Оновлення курсу за id. Дані для оновлення передаються в форматі json       | /update/course/<int:course_id>   |http://127.0.0.1:5000/update/course/5|```{"name": "C++ Course Advanced","end_date": "2021-09-30","lectures_number": 10} ```|
+| PUT   | Оновлення курсу за id. Дані для оновлення передаються в форматі json       | /update/course/<int:course_id>   |http://127.0.0.1:5000/update/course/5|```{"name": "C++ Course Advanced","end_date": "2021-09-30","lectures_number": 10} ```|
